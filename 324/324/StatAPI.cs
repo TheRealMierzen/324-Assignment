@@ -52,6 +52,20 @@ namespace StatAPI
             return output;
         }
 
+        public double Average(int n)
+        {
+            double ave = 0.0;
+
+            for (int i = 0; i < theList.Count; i++)
+            {
+                ave += theList[i];
+            }
+
+            ave = ave / n;
+
+            return ave;
+        }
+
     }
 
 }
