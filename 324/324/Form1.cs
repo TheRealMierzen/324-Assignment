@@ -19,7 +19,8 @@ namespace _324
 
         private void btnGerhard_Click(object sender, EventArgs e)
         {
-
+            Frm_GerhardKlopper gkform = new Frm_GerhardKlopper();
+            gkform.Show();
         }
 
         private void btnZac_Click(object sender, EventArgs e)
