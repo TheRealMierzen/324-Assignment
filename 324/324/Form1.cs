@@ -1,0 +1,50 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace _324
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btnGerhard_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnZac_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnStefan_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDylan_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLouis_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMarco_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
