@@ -42,6 +42,16 @@ namespace StatAPI
                 return theList[maxindex];
         }
 
+        public double SumTotal()
+        {
+            double j = 0;
+            for (int i = 0; i < theList.Count; i++)
+            {
+                j = j + theList[i];
+            }
+            return j;
+        }
+
         public string PrintNumbers()
         {
             string output = "";
