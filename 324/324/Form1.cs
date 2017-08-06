@@ -35,7 +35,8 @@ namespace _324
 
         private void btnDylan_Click(object sender, EventArgs e)
         {
-
+            DylanJansen dform = new DylanJansen();
+            dform.Show();
         }
 
         private void btnLouis_Click(object sender, EventArgs e)

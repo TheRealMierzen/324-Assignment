@@ -39,43 +39,48 @@
             // lblBio
             // 
             this.lblBio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblBio.Location = new System.Drawing.Point(12, 9);
+            this.lblBio.Location = new System.Drawing.Point(9, 7);
+            this.lblBio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBio.Name = "lblBio";
-            this.lblBio.Size = new System.Drawing.Size(719, 79);
+            this.lblBio.Size = new System.Drawing.Size(540, 65);
             this.lblBio.TabIndex = 0;
             this.lblBio.Text = "Gerhard Klopper\r\n\r\nLives in Kuruman in the Northern Cape. Went to school in Kroon" +
     "stad. Goes to NWU Potchefstroom and is now a 3rd year IT student.";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(15, 117);
+            this.textBox1.Location = new System.Drawing.Point(11, 95);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(127, 22);
+            this.textBox1.Size = new System.Drawing.Size(96, 20);
             this.textBox1.TabIndex = 1;
             // 
             // lblRandom
             // 
             this.lblRandom.AutoSize = true;
-            this.lblRandom.Location = new System.Drawing.Point(12, 97);
+            this.lblRandom.Location = new System.Drawing.Point(9, 79);
+            this.lblRandom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRandom.Name = "lblRandom";
-            this.lblRandom.Size = new System.Drawing.Size(287, 17);
+            this.lblRandom.Size = new System.Drawing.Size(213, 13);
             this.lblRandom.TabIndex = 2;
             this.lblRandom.Text = "Input a number for random number creation:";
             // 
             // lblNumbers
             // 
             this.lblNumbers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblNumbers.Location = new System.Drawing.Point(12, 154);
+            this.lblNumbers.Location = new System.Drawing.Point(9, 125);
+            this.lblNumbers.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNumbers.Name = "lblNumbers";
-            this.lblNumbers.Size = new System.Drawing.Size(719, 217);
+            this.lblNumbers.Size = new System.Drawing.Size(540, 177);
             this.lblNumbers.TabIndex = 3;
             this.lblNumbers.Text = "::numbers::";
             // 
             // btnGetMax
             // 
-            this.btnGetMax.Location = new System.Drawing.Point(611, 374);
+            this.btnGetMax.Location = new System.Drawing.Point(458, 304);
+            this.btnGetMax.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnGetMax.Name = "btnGetMax";
-            this.btnGetMax.Size = new System.Drawing.Size(120, 52);
+            this.btnGetMax.Size = new System.Drawing.Size(90, 42);
             this.btnGetMax.TabIndex = 4;
             this.btnGetMax.Text = "Get Max";
             this.btnGetMax.UseVisualStyleBackColor = true;
@@ -83,9 +88,10 @@
             // 
             // btnCreate
             // 
-            this.btnCreate.Location = new System.Drawing.Point(604, 102);
+            this.btnCreate.Location = new System.Drawing.Point(453, 83);
+            this.btnCreate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(127, 37);
+            this.btnCreate.Size = new System.Drawing.Size(95, 30);
             this.btnCreate.TabIndex = 4;
             this.btnCreate.Text = "Create Numbers";
             this.btnCreate.UseVisualStyleBackColor = true;
@@ -93,15 +99,16 @@
             // 
             // Frm_GerhardKlopper
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(743, 437);
+            this.ClientSize = new System.Drawing.Size(557, 355);
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.btnGetMax);
             this.Controls.Add(this.lblNumbers);
             this.Controls.Add(this.lblRandom);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblBio);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Frm_GerhardKlopper";
             this.Text = "Frm_GerhardKlopper";
             this.ResumeLayout(false);

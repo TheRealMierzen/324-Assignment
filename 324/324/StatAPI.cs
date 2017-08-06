@@ -52,6 +52,21 @@ namespace StatAPI
             return output;
         }
 
+        public double GetMedian()
+        {
+            double[] lys = theList.ToArray();
+            if (lys == null || lys.Length == 0)
+                throw new System.Exception("Median of an empty array can not be found");
+
+            double[] clone = (double[])lys.Clone();
+            Array.Sort(clone);
+
+            int size = clone.Length;
+            int mid = size / 2;
+            double median = (size % 2 != 0) ? (double)clone[mid] : ((double)clone[mid] + (double)clone[mid - 1]) / 2;
+            return median;
+
+        }
     }
 
 }
