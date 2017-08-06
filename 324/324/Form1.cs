@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace _324
@@ -45,7 +38,8 @@ namespace _324
 
         private void btnMarco_Click(object sender, EventArgs e)
         {
-
+            frmMarco mForm = new frmMarco();
+            mForm.Show();
         }
     }
 }

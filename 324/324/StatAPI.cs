@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace StatAPI
 {
@@ -50,6 +51,13 @@ namespace StatAPI
                 output += theList[i].ToString() + " ";
             }
             return output;
+        }
+
+        public double min()
+        {
+
+            return theList.Min();
+
         }
 
     }
