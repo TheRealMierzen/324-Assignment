@@ -29,7 +29,7 @@ namespace _324
             }
             else
             {
-                MessageBox.Show("Not a number");
+                MessageBox.Show("Please enter a integer");
             }
         }
 

@@ -16,25 +16,24 @@ namespace _324
         {
             numberholder.clearList();
             int n = 0;
-            int.TryParse(textBox1.Text, out n); numberholder.AddNRandomNumbers(n, 0, 50);
-            if (numberholder.checkValidN(n))
+            if (int.TryParse(textBox1.Text, out n))
             {
+                if (numberholder.checkValidN(n))
+                {
+                    numberholder.AddNRandomNumbers(n, 0, 50);
+                }
+                else
+                {
+                    MessageBox.Show("The entered value is invalid. Please enter a value between 5 and 20.");
+                }
+                numberholder.AddNRandomNumbers(n, 0, 25);
                 lblNumbers.Text = numberholder.PrintNumbers();
             }
             else
             {
-                MessageBox.Show("The entered value is invalid. Please enter a value between 5 and 20.");
+                MessageBox.Show("Please enter a integer");
             }
-
-            //if (int.TryParse(textBox1.Text, out n))
-            //{
-            //    numberholder.AddNRandomNumbers(n, 0, 25);
-            //    lblNumbers.Text = numberholder.PrintNumbers();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Not a number");
-            //}
+            lblNumbers.Text = numberholder.PrintNumbers();
 
         }
 
@@ -43,9 +42,5 @@ namespace _324
             MessageBox.Show(numberholder.Max().ToString() + " is the max number.");
         }
 
-        private void lblNumbers_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
