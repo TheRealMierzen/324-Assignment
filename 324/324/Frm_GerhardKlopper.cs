@@ -34,5 +34,10 @@ namespace _324
         {
             MessageBox.Show(numberholder.Max().ToString() + " is the max number.");
         }
+
+        private void lblNumbers_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
