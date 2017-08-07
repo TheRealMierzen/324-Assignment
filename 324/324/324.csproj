@@ -57,6 +57,12 @@
     <Compile Include="frmStefanMalan.Designer.cs">
       <DependentUpon>frmStefanMalan.cs</DependentUpon>
     </Compile>
+    <Compile Include="DylanJansen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DylanJansen.Designer.cs">
+      <DependentUpon>DylanJansen.cs</DependentUpon>
+    </Compile>
     <Compile Include="StatAPI.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -72,6 +78,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DylanJansen.resx">
+      <DependentUpon>DylanJansen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
