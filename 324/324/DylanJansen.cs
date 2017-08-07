@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace _324
@@ -20,11 +13,19 @@ namespace _324
 
         private void button1_Click(object sender, EventArgs e)
         {
+            numb.clearList();
             int n = 0;
             if (int.TryParse(textBox1.Text, out n))
             {
-                numb.AddNRandomNumbers(n, 0, 25);
-                label3.Text = numb.PrintNumbers();
+                if (numb.checkValidN(n))
+                {
+                    numb.AddNRandomNumbers(n, 0, 50);
+                    label3.Text = numb.PrintNumbers();
+                }
+                else
+                {
+                    MessageBox.Show("The entered value is invalid. Please enter a value between 5 and 20.");
+                }
             }
             else
             {

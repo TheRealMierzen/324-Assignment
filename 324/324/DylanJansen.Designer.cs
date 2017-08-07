@@ -120,6 +120,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Name = "DylanJansen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DylanJansen";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

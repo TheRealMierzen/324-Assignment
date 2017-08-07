@@ -112,6 +112,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Frm_Louis_van_Rensburg";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_Louis_van_Rensburg";
             this.ResumeLayout(false);
             this.PerformLayout();

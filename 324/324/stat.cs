@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 
 namespace StatAPI
 {
@@ -15,6 +16,16 @@ namespace StatAPI
             theList = new List<double>();
         }
 
+        public bool checkValidN(int value)
+        {
+
+            if (value > 25 || value < 5)
+                return false;
+
+            return true;
+
+        }
+        
         public void AddNRandomNumbers(int N, double min, double max)
         {
             Random myRandom = new Random();
@@ -27,9 +38,7 @@ namespace StatAPI
 
         public void clearList()
         {
-
             this.theList.Clear();
-
         }
 
         public double Max()
@@ -72,7 +81,6 @@ namespace StatAPI
 
         public double min()
         {
-
             return theList.Min();
         }
         

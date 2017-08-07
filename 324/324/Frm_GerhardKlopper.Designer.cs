@@ -50,7 +50,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(11, 95);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(96, 20);
             this.textBox1.TabIndex = 1;
@@ -74,11 +74,12 @@
             this.lblNumbers.Size = new System.Drawing.Size(540, 177);
             this.lblNumbers.TabIndex = 3;
             this.lblNumbers.Text = "::numbers::";
+            this.lblNumbers.Click += new System.EventHandler(this.lblNumbers_Click);
             // 
             // btnGetMax
             // 
             this.btnGetMax.Location = new System.Drawing.Point(458, 304);
-            this.btnGetMax.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGetMax.Margin = new System.Windows.Forms.Padding(2);
             this.btnGetMax.Name = "btnGetMax";
             this.btnGetMax.Size = new System.Drawing.Size(90, 42);
             this.btnGetMax.TabIndex = 4;
@@ -89,7 +90,7 @@
             // btnCreate
             // 
             this.btnCreate.Location = new System.Drawing.Point(453, 83);
-            this.btnCreate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCreate.Margin = new System.Windows.Forms.Padding(2);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(95, 30);
             this.btnCreate.TabIndex = 4;
@@ -108,7 +109,7 @@
             this.Controls.Add(this.lblRandom);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblBio);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Frm_GerhardKlopper";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_GerhardKlopper";

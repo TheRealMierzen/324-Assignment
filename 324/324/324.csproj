@@ -75,7 +75,7 @@
     <Compile Include="Frm_Louis van Rensburg.Designer.cs">
       <DependentUpon>Frm_Louis van Rensburg.cs</DependentUpon>
     </Compile>
-    <Compile Include="StatAPI.cs" />
+    <Compile Include="stat.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
