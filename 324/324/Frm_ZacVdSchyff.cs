@@ -30,7 +30,7 @@ namespace _324
             }
             else
             {
-                MessageBox.Show("Please enter a number");
+                MessageBox.Show("Please enter an integer");
             }
         }
 

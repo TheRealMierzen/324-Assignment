@@ -74,7 +74,6 @@
             this.lblNumbers.Size = new System.Drawing.Size(540, 177);
             this.lblNumbers.TabIndex = 3;
             this.lblNumbers.Text = "::numbers::";
-            this.lblNumbers.Click += new System.EventHandler(this.lblNumbers_Click);
             // 
             // btnGetMax
             // 

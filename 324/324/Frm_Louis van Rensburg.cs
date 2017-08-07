@@ -24,7 +24,7 @@ namespace _324
                     statAPI.AddNRandomNumbers(n, 0, 50);
                     lbl_Numbers.Text = statAPI.PrintNumbers();
 
-                    lbl_StandardDeviation.Text = String.Format("Standard Deviation: {0:N3}", statAPI.StandardDeviation(n));
+                    MessageBox.Show(String.Format("Standard Deviation: {0:N3}", statAPI.StandardDeviation(n)));
                 }
                 else
                 {
@@ -33,7 +33,7 @@ namespace _324
             }
             catch (FormatException f)
             {
-                MessageBox.Show("Entered value is not a number" + f);
+                MessageBox.Show("Please enter a integer" + f);
                 textBox_Num.Clear();
                 textBox_Num.Focus();
             }
@@ -41,8 +41,6 @@ namespace _324
 
         private void button_back_Click(object sender, EventArgs e)
         {
-            Form1 frm1 = new Form1();
-            frm1.Show();
             this.Close();
         }
     }
