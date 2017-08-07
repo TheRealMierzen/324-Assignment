@@ -14,8 +14,9 @@ namespace _324
 
         private void btnCreate_Click(object sender, EventArgs e)
         {
+            numberholder.clearList();
             int n = 0;
-            int.TryParse(textBox1.Text, out n); numberholder.AddNRandomNumbers(n, 0, 25);
+            int.TryParse(textBox1.Text, out n); numberholder.AddNRandomNumbers(n, 0, 50);
             if (numberholder.checkValidN(n))
             {
                 lblNumbers.Text = numberholder.PrintNumbers();

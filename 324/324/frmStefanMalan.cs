@@ -26,14 +26,19 @@ namespace _324
 
             if (int.TryParse(txtN.Text, out n))
             {
-                stat.AddNRandomNumbers(n, 5, 20);
-                lblNumbers.Text = stat.PrintNumbers();
+                if (stat.checkValidN(n))
+                {
+                    stat.AddNRandomNumbers(n, 0, 50);
+                    label1.Text = stat.PrintNumbers();
 
-                n = Convert.ToInt32(txtN.Text);
-                stat.AddNRandomNumbers(n, 0, 50);
-                ave = stat.Average(n);
-                lblAverage.Text = ave.ToString();
-                label1.Text = stat.PrintNumbers();
+                    n = Convert.ToInt32(txtN.Text);
+                    ave = stat.Average(n);
+                    MessageBox.Show("The average of the numbers is: " + ave.ToString());
+                }
+                else
+                {
+                    MessageBox.Show("The entered value is invalid. Please enter a value between 5 and 20.");
+                }
             }
             else
             {

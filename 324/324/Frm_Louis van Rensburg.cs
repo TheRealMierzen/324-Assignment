@@ -15,6 +15,7 @@ namespace _324
             try
             {
                 StatAPI.StatAPI statAPI = new StatAPI.StatAPI();
+                statAPI.clearList();
                 int n = 0;
                 n = int.Parse(textBox_Num.Text);
 

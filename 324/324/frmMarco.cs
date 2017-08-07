@@ -33,8 +33,16 @@ namespace _324
             int n = 0;
             if (int.TryParse(txtN.Text, out n))
             {
-                other.AddNRandomNumbers(n, 5, 20);
-                lblNumbers.Text = other.PrintNumbers();
+                if (other.checkValidN(n))
+                {
+                    other.AddNRandomNumbers(n, 0, 50);
+                    lblNumbers.Text = other.PrintNumbers();
+                }
+                else
+                {
+                    MessageBox.Show("The entered value is invalid. Please enter a value between 5 and 20.");
+                }
+                
             }
             else
             {
@@ -46,6 +54,7 @@ namespace _324
         private void btnClear_Click(object sender, EventArgs e)
         {
             other.clearList();
+            lblNumbers.Text = "";
         }
     }
 }

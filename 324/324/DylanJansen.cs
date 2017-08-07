@@ -13,12 +13,13 @@ namespace _324
 
         private void button1_Click(object sender, EventArgs e)
         {
+            numb.clearList();
             int n = 0;
             if (int.TryParse(textBox1.Text, out n))
             {
                 if (numb.checkValidN(n))
                 {
-                    numb.AddNRandomNumbers(n, 0, 25);
+                    numb.AddNRandomNumbers(n, 0, 50);
                     label3.Text = numb.PrintNumbers();
                 }
                 else

@@ -14,12 +14,13 @@ namespace _324
 
         private void btnRandom_Click(object sender, EventArgs e)
         {
+            myList.clearList();
             int n = 0;           
             if (int.TryParse(txtNum.Text, out n))
             {
                 if (myList.checkValidN(n))
                 {
-                    myList.AddNRandomNumbers(n, 0, 25);
+                    myList.AddNRandomNumbers(n, 0, 50);
                     lblNumbers.Text = myList.PrintNumbers();
                 }
                 else
