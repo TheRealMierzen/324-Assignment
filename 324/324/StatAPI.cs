@@ -25,6 +25,13 @@ namespace StatAPI
             }
         }
 
+        public void clearList()
+        {
+
+            this.theList.Clear();
+
+        }
+
         public double Max()
         {
             int maxindex = -1;
