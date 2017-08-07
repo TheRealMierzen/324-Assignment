@@ -16,7 +16,14 @@ namespace _324
         {
             int n = 0;
             int.TryParse(textBox1.Text, out n); numberholder.AddNRandomNumbers(n, 0, 25);
-            lblNumbers.Text = numberholder.PrintNumbers();
+            if (numberholder.checkValidN(n))
+            {
+                lblNumbers.Text = numberholder.PrintNumbers();
+            }
+            else
+            {
+                MessageBox.Show("The entered value is invalid. Please enter a value between 5 and 20.");
+            }
 
             //if (int.TryParse(textBox1.Text, out n))
             //{

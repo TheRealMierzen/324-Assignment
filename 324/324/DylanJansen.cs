@@ -16,8 +16,15 @@ namespace _324
             int n = 0;
             if (int.TryParse(textBox1.Text, out n))
             {
-                numb.AddNRandomNumbers(n, 0, 25);
-                label3.Text = numb.PrintNumbers();
+                if (numb.checkValidN(n))
+                {
+                    numb.AddNRandomNumbers(n, 0, 25);
+                    label3.Text = numb.PrintNumbers();
+                }
+                else
+                {
+                    MessageBox.Show("The entered value is invalid. Please enter a value between 5 and 20.");
+                }
             }
             else
             {

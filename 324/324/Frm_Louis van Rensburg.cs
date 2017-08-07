@@ -18,10 +18,17 @@ namespace _324
                 int n = 0;
                 n = int.Parse(textBox_Num.Text);
 
-                statAPI.AddNRandomNumbers(n, 0, 50);
-                lbl_Numbers.Text = statAPI.PrintNumbers();
+                if (statAPI.checkValidN(n))
+                {
+                    statAPI.AddNRandomNumbers(n, 0, 50);
+                    lbl_Numbers.Text = statAPI.PrintNumbers();
 
-                lbl_StandardDeviation.Text = String.Format("Standard Deviation: {0:N3}", statAPI.StandardDeviation(n));
+                    lbl_StandardDeviation.Text = String.Format("Standard Deviation: {0:N3}", statAPI.StandardDeviation(n));
+                }
+                else
+                {
+                    MessageBox.Show("The entered value is invalid. Please enter a value between 5 and 20.");
+                }
             }
             catch (FormatException f)
             {

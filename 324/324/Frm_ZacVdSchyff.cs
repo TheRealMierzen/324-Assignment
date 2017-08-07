@@ -15,15 +15,22 @@ namespace _324
         private void btnRandom_Click(object sender, EventArgs e)
         {
             int n = 0;           
-                if (int.TryParse(txtNum.Text, out n))
+            if (int.TryParse(txtNum.Text, out n))
+            {
+                if (myList.checkValidN(n))
                 {
                     myList.AddNRandomNumbers(n, 0, 25);
                     lblNumbers.Text = myList.PrintNumbers();
                 }
                 else
                 {
-                    MessageBox.Show("Please enter a number");
+                    MessageBox.Show("The entered value is invalid. Please enter a value between 5 and 20.");
                 }
+            }
+            else
+            {
+                MessageBox.Show("Please enter a number");
+            }
         }
 
         private void btnSum_Click(object sender, EventArgs e)
