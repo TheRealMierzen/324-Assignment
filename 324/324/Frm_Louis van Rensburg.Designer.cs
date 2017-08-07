@@ -34,7 +34,7 @@
             this.lbl_Numbers = new System.Windows.Forms.Label();
             this.lbl_StandardDeviation = new System.Windows.Forms.Label();
             this.btn_GenNum = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.button_back = new System.Windows.Forms.Button();
             this.textBox_Num = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -82,14 +82,15 @@
             this.btn_GenNum.UseVisualStyleBackColor = true;
             this.btn_GenNum.Click += new System.EventHandler(this.btn_GenNum_Click);
             // 
-            // button2
+            // button_back
             // 
-            this.button2.Location = new System.Drawing.Point(595, 381);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button_back.Location = new System.Drawing.Point(595, 381);
+            this.button_back.Name = "button_back";
+            this.button_back.Size = new System.Drawing.Size(75, 23);
+            this.button_back.TabIndex = 5;
+            this.button_back.Text = "Back";
+            this.button_back.UseVisualStyleBackColor = true;
+            this.button_back.Click += new System.EventHandler(this.button_back_Click);
             // 
             // textBox_Num
             // 
@@ -104,7 +105,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(682, 416);
             this.Controls.Add(this.textBox_Num);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button_back);
             this.Controls.Add(this.btn_GenNum);
             this.Controls.Add(this.lbl_StandardDeviation);
             this.Controls.Add(this.lbl_Numbers);
@@ -124,7 +125,7 @@
         private System.Windows.Forms.Label lbl_Numbers;
         private System.Windows.Forms.Label lbl_StandardDeviation;
         private System.Windows.Forms.Button btn_GenNum;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button_back;
         private System.Windows.Forms.TextBox textBox_Num;
     }
 }

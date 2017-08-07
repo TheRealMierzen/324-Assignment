@@ -40,7 +40,11 @@ namespace _324
 
         private void btnLouis_Click(object sender, EventArgs e)
         {
-
+            Frm_Louis_van_Rensburg lvrform = new Frm_Louis_van_Rensburg();
+            lvrform.Show();
+            Form1 frm1 = new Form1();
+            frm1.Close();
+            lvrform.Focus();
         }
 
         private void btnMarco_Click(object sender, EventArgs e)

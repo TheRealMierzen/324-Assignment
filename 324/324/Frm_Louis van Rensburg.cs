@@ -37,5 +37,12 @@ namespace _324
                 textBox_Num.Focus();
             }
         }
+
+        private void button_back_Click(object sender, EventArgs e)
+        {
+            Form1 frm1 = new Form1();
+            frm1.Show();
+            this.Close();
+        }
     }
 }
