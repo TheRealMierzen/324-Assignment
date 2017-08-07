@@ -105,13 +105,11 @@
     <EmbeddedResource Include="Frm_GerhardKlopper.resx">
       <DependentUpon>Frm_GerhardKlopper.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Include="Frm_ZacVdSchyff.resx">
       <DependentUpon>Frm_ZacVdSchyff.cs</DependentUpon>
-=======
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Louis van Rensburg.resx">
       <DependentUpon>Frm_Louis van Rensburg.cs</DependentUpon>
->>>>>>> feature_Louis_van_Rensburg
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
