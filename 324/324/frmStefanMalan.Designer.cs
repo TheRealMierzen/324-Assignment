@@ -126,6 +126,7 @@
             this.Controls.Add(this.lblNumbers);
             this.Controls.Add(this.btnGenerate);
             this.Name = "frmStefanMalan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmStefanMalan";
             this.ResumeLayout(false);
             this.PerformLayout();

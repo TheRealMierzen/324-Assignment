@@ -50,6 +50,7 @@
     </Compile>
     <Compile Include="frmMarco.Designer.cs">
       <DependentUpon>frmMarco.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmStefanMalan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +77,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMarco.resx">
       <DependentUpon>frmMarco.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmStefanMalan.resx">
       <DependentUpon>frmStefanMalan.cs</DependentUpon>
     </EmbeddedResource>
