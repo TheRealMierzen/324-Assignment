@@ -50,6 +50,11 @@
     </Compile>
     <Compile Include="frmMarco.Designer.cs">
       <DependentUpon>frmMarco.cs</DependentUpon>
+    <Compile Include="frmStefanMalan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStefanMalan.Designer.cs">
+      <DependentUpon>frmStefanMalan.cs</DependentUpon>
     </Compile>
     <Compile Include="StatAPI.cs" />
     <Compile Include="Form1.cs">
@@ -71,6 +76,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMarco.resx">
       <DependentUpon>frmMarco.cs</DependentUpon>
+    <EmbeddedResource Include="frmStefanMalan.resx">
+      <DependentUpon>frmStefanMalan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_GerhardKlopper.resx">
       <DependentUpon>Frm_GerhardKlopper.cs</DependentUpon>
