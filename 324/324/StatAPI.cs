@@ -72,7 +72,6 @@ namespace StatAPI
 
         public double min()
         {
-
             return theList.Min();
         }
         

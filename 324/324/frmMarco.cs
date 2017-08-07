@@ -13,7 +13,6 @@ namespace _324
         private void btnMin_Click(object sender, EventArgs e)
         {
 
-
             if (txtN.Text != "")
             {
                 StatAPI.StatAPI other = new StatAPI.StatAPI();
