@@ -21,11 +21,7 @@ namespace _324
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            Form1 frm1 = new Form1();
-            frmStefanMalan smform = new frmStefanMalan();
-            frm1.Show();
-            smform.Close();
-            frm1.TopMost = true;
+            this.Close();
         }
 
         private void btnGenerate_Click(object sender, EventArgs e)

@@ -24,10 +24,7 @@ namespace _324
         private void btnStefan_Click(object sender, EventArgs e)
         {
             frmStefanMalan smform = new frmStefanMalan();
-            Form1 frm1 = new Form1();
             smform.Show();
-            frm1.Close();
-            smform.TopMost = true;
         }
 
         private void btnDylan_Click(object sender, EventArgs e)
