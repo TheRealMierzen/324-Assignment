@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace _324
@@ -21,22 +14,38 @@ namespace _324
 
         private void btnCreate_Click(object sender, EventArgs e)
         {
+            numberholder.clearList();
             int n = 0;
-            if (int.TryParse(textBox1.Text, out n))
+            int.TryParse(textBox1.Text, out n); numberholder.AddNRandomNumbers(n, 0, 50);
+            if (numberholder.checkValidN(n))
             {
-                numberholder.AddNRandomNumbers(n, 0, 25);
                 lblNumbers.Text = numberholder.PrintNumbers();
             }
             else
             {
-                MessageBox.Show("Not a number");
+                MessageBox.Show("The entered value is invalid. Please enter a value between 5 and 20.");
             }
+
+            //if (int.TryParse(textBox1.Text, out n))
+            //{
+            //    numberholder.AddNRandomNumbers(n, 0, 25);
+            //    lblNumbers.Text = numberholder.PrintNumbers();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Not a number");
+            //}
 
         }
 
         private void btnGetMax_Click(object sender, EventArgs e)
         {
             MessageBox.Show(numberholder.Max().ToString() + " is the max number.");
+        }
+
+        private void lblNumbers_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

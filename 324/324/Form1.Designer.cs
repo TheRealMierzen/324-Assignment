@@ -108,7 +108,8 @@
             this.Controls.Add(this.btnStefan);
             this.Controls.Add(this.btnGerhard);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Group 7";
             this.ResumeLayout(false);
 
         }

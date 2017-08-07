@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace _324
@@ -25,27 +18,35 @@ namespace _324
 
         private void btnZac_Click(object sender, EventArgs e)
         {
-
+            Frm_ZacVdSchyff zac = new Frm_ZacVdSchyff();
+            zac.Show();
         }
 
         private void btnStefan_Click(object sender, EventArgs e)
         {
-
+            frmStefanMalan smform = new frmStefanMalan();
+            smform.Show();
         }
 
         private void btnDylan_Click(object sender, EventArgs e)
         {
-
+            DylanJansen dform = new DylanJansen();
+            dform.Show();
         }
 
         private void btnLouis_Click(object sender, EventArgs e)
         {
-
+            Frm_Louis_van_Rensburg lvrform = new Frm_Louis_van_Rensburg();
+            lvrform.Show();
+            Form1 frm1 = new Form1();
+            frm1.Close();
+            lvrform.Focus();
         }
 
         private void btnMarco_Click(object sender, EventArgs e)
         {
-
+            frmMarco mForm = new frmMarco();
+            mForm.Show();
         }
     }
 }
