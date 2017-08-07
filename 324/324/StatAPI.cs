@@ -98,6 +98,18 @@ namespace StatAPI
             return median;
 
         }
+        
+        public double StandardDeviation(int n)
+        {
+            double sd = 0.0;
+            double avg = Average(n);
+
+            double sumOfSqueresDiff = theList.Select(val => (val - avg) * (val - avg)).Sum();
+            sd = Math.Sqrt(sumOfSqueresDiff / theList.Count);
+
+            return sd;
+        }
+
     }
 
 }
